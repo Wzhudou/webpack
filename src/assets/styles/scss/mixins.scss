@@ -1,0 +1,7 @@
+//公共样式函数
+@function cleanDefaultStyle() {
+  $appearance: none;
+  $outline: none;
+  $border: none;
+  @return mix($appearance, $outline, $border);
+}

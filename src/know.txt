@@ -1,0 +1,23 @@
+vue 会打包生成三个文件
+    1、runtime only 文件 vue.common.js （默认导出）
+    2、complier only 文件 complier.js
+    3、runtime_+complier的文件vue.js ===> 如何打包成vue.js
+    ===>
+    resolve: {
+            alias: {
+                'vue': 'vue/dist/vue.js'
+            }
+        }
+loader:
+    1、css-loader：解决文件之间的依赖关系，把所有的css文件打包成一个文件
+    2、style-loader：将css-loader打包完成后生成的文件挂在到页面的head标签的style中
+
+SourceMap:
+    主要作用： 在开发时快读定位到出错的源代码行
+
+生产环境
+    目标：打包的文件小和块
+    所以不需要devServer、devtool等设置
+
+webpack-merge
+    提取公共部分
