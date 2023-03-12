@@ -1,0 +1,4 @@
+# 忽略安装包的wenjianjia
+node_modules/
+dist/
+.idea/
